@@ -204,6 +204,3 @@ def summarize_predictions_natural_language(predictions):
     result_string = result_string.rstrip(', ') + "."
 
     return result_string
-
-
-  
