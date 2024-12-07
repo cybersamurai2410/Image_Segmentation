@@ -1,9 +1,5 @@
-from transformers import pipeline, SamModel, SamProcessor
-from PIL import Image
-import torch
 import gradio as gr
-import numpy as np
-from helper import show_mask_on_image, render_results_in_image, summarize_predictions_natural_language
+from segment_functions import segment_image, estimate_depth, detect_objects
 
 # Gradio App
 with gr.Blocks() as demo:
@@ -44,5 +40,4 @@ with gr.Blocks() as demo:
             outputs=[detected_objects_image, detected_objects_audio],
         )
 
-if __name__ == "__main__":
-    demo.launch(share=True)
+demo.launch()
