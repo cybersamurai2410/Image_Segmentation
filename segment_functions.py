@@ -1,3 +1,9 @@
+from transformers import pipeline, SamModel, SamProcessor
+from PIL import Image
+import torch
+import numpy as np
+from helper import show_mask_on_image, render_results_in_image, summarize_predictions_natural_language
+
 # Image Segmentation Model
 sam_model = SamModel.from_pretrained("Zigeng/SlimSAM-uniform-77")
 sam_processor = SamProcessor.from_pretrained("Zigeng/SlimSAM-uniform-77")
