@@ -7,4 +7,4 @@ Developed app using open-source models that segment objects from any data point 
 3. Overlay those masks on the original image using a red color with transparency and display the final segmented image.
 
 ## Screenshots
-<img width="750" alt="image" src="https://github.com/user-attachments/assets/82270a40-5039-41b4-9786-0cdcd4a7a081">
+<img width="752" alt="image" src="https://github.com/user-attachments/assets/efd85b16-ec63-473e-947b-9ee236819d1a">
