@@ -9,9 +9,6 @@ import requests
 sam_model = SamModel.from_pretrained("Zigeng/SlimSAM-uniform-77")
 sam_processor = SamProcessor.from_pretrained("Zigeng/SlimSAM-uniform-77")
 
-def load_image_from_url(url):
-    return Image.open(requests.get(url, stream=True).raw)
-
 def show_colored_mask(mask, combined_mask, color):
     """
     Add a single-colored mask to the combined mask.
